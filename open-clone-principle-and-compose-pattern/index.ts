@@ -1,7 +1,9 @@
 /*
 * Open Close Principle
-* Depence Inversion
+* Denpency Inversion
 * Design Compose
+* Denpency Injector
+* Design Compose Root
 */
 
 
@@ -51,11 +53,11 @@ class UserValidadeCompose implements Validate {
 
 
 
-
+// Denpency Injector
+// Design Compose Root
 const userPasswordValidate = new UserPasswordValidade();
 
 const userEmailValidate = new UserEmailValidade();
-
 
 //  Compose Pattern
 const userValidadeCompose = new UserValidadeCompose(userEmailValidate, userPasswordValidate);
